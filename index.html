@@ -1,0 +1,35 @@
+<script>
+
+var object = {name: "John", age: 25}
+
+for(prop in object)
+{
+   console.log(prop);
+   console.log(object[prop]);
+}
+
+
+
+
+console.log("--------------------")
+object.nationality = "Canadian";
+
+
+for(prop in object)
+{
+   console.log(prop);
+   console.log(object[prop]);
+}
+
+
+object.toString = function()
+{
+   return this.name + " " + this.age;
+}
+
+
+console.log(object.toString());
+console.log(object);
+
+
+</script>
